@@ -1,9 +1,11 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 import { Observable } from 'rxjs';
+
 import { environment } from 'src/environments/environment';
 import { Tecnico } from '../models/tecnico';
-import { HttpClient } from '@angular/common/http';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
@@ -41,7 +43,6 @@ export class TecnicoService {
   delete(id : any) : Observable<void>{
     const url = `${this.baseUrl}/tecnicos/${id}`;
     return this.http.delete<void>(url);
-
   }
 
   message(msg : string) : void{

@@ -1,7 +1,9 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { MatTooltip } from '@angular/material/tooltip';
 import { Router } from '@angular/router';
+
 import { Tecnico } from 'src/app/models/tecnico';
 import { TecnicoService } from 'src/app/services/tecnico.service';
 
@@ -50,8 +52,5 @@ export class TecnicoReadComponent implements AfterViewInit {
   }
 
 }
-
-
-
 
 
