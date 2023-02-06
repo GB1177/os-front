@@ -1,0 +1,33 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+.full-width{
+    width: 100%;
+}
+
+
+#create {
+    color: rgb(14, 167, 146);
+}
+
+textarea{
+    min-height: 4rem;
+    max-height: 13rem;
+}
+
+button{
+    width: 100%;
+    margin-bottom: .4rem;
+}

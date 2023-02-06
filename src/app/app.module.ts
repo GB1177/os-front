@@ -14,6 +14,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
+import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -32,6 +33,11 @@ import { ClienteReadComponent } from './views/components/cliente/cliente-read/cl
 import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
 import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
+import { OsReadComponent } from './views/components/os/os-read/os-read.component';
+import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
+import { OsUpdateComponent } from './views/components/os/os-update/os-update.component';
+import { OsViewComponent } from './views/components/os/os-view/os-view.component';
+import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,12 @@ import { ClienteDeleteComponent } from './views/components/cliente/cliente-delet
     ClienteReadComponent,
     ClienteCreateComponent,
     ClienteUpdateComponent,
-    ClienteDeleteComponent
+    ClienteDeleteComponent,
+    OsReadComponent,
+    OsCreateComponent,
+    OsUpdateComponent,
+    OsViewComponent,
+    OsClosedComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +82,7 @@ import { ClienteDeleteComponent } from './views/components/cliente/cliente-delet
     MatDatepickerModule,
     MatPaginatorModule,
     MatSnackBarModule,
+    MatMenuModule,
     MatTooltipModule
   ],
   providers: [],
